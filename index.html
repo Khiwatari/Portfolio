@@ -23,7 +23,7 @@
 
 <body>
     <header class="header">
-        <div class="nav section">
+        <div class="nav nav_section">
             <nav class="navbar">
                 <div class="nav_logo">
                     <a href="#" class="logo">GAG<span class="nav-logo">AN</span></a>
@@ -100,7 +100,7 @@
         </div>
 
 
-        <section class="about container">
+        <section class="about container section">
             <h2 class="section-title">About - Me</h2>
             <div class="about_details section">
                 <div class="about_img">
@@ -108,7 +108,9 @@
                 </div>
 
                 <div class="about_info" id="about-info">
-                    <h2> Gagan </h2>
+                    <div class="about_info_heading">
+                        <h2> Gagan </h2>
+                    </div>
                     <p> Hii, Myself Gagan Deep Singh a hardworking , energetic , creative & full of motivation and
                         positive attitude student of Dr.A.P.J. Abdul Kalam Technical University Doing Bachelor's Of
                         Technology in Computer Science and Engineering . A Frontend Web Developer with extensive
@@ -127,46 +129,84 @@
             <div class="skills_conatiner container">
 
                 <!-- ================================ Skill 1===================================== -->
-                <div class="skill_content">
+                <div class="skill_content skill_open">
                     <div class="skill_header">
                         <i class="uil uil-desktop skill_icon"></i>
-                        
+
                         <div class="skill_title">
                             <h3>Frontend Web Developer</h3>
                         </div>
+
+                        <i class="uil uil-angle-down skill_down"></i>
+
                     </div>
 
-                    <i class="uil uil-angle-down skill_down"></i>
 
                     <div class="skill_list">
-                    <div class="skill_sublist">
-                        <div class="skill_subtitle">
-                            <h3>HTML5</h3>
-                            <span class="skill_percent" >90%</span>
+                        <div class="skill_sublist">
+                            <div class="skill_subtitle">
+                                <h3>HTML5</h3>
+                                <span class="skill_percent">90%</span>
+                            </div>
+                            <div class="skill_percent_bar">
+                                <span class="skill_bar_html"></span>
+                            </div>
                         </div>
-                        <div class="skill_percent_bar">
-                            <span class="skill_bar"></span>
+                        <div class="skill_sublist">
+                            <div class="skill_subtitle">
+                                <h3>CSS3</h3>
+                                <span class="skill_percent">70%</span>
+                            </div>
+                            <div class="skill_percent_bar">
+                                <span class="skill_bar_css"></span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="skill_sublist">
-                        <div class="skill_subtitle">
-                            <h3>CSS3</h3>
-                            <span class="skill_percent" >70%</span>
-                        </div>
-                        <div class="skill_percent_bar">
-                            <span class="skill_bar"></span>
-                        </div>
-                    </div>
-                    <div class="skill_sublist">
-                        <div class="skill_subtitle">
-                            <h3>Javascript</h3>
-                            <span class="skill_percent" >60%</span>
-                        </div>
-                        <div class="skill_percent_bar">
-                            <span class="skill_bar"></span>
+                        <div class="skill_sublist">
+                            <div class="skill_subtitle">
+                                <h3>Javascript</h3>
+                                <span class="skill_percent">60%</span>
+                            </div>
+                            <div class="skill_percent_bar">
+                                <span class="skill_bar_js"></span>
+                            </div>
                         </div>
                     </div>
                 </div>
+
+                <div class="skill_content skill_close">
+
+                    <div class="skill_header">
+                        <i class="uil uil-palette skill_icon"></i>
+
+                        <div class="skill_title">
+                            <h3>Graphics Designer</h3>
+                        </div>
+
+                        <i class="uil uil-angle-down skill_down"></i>
+
+                    </div>
+
+
+                    <div class="skill_list">
+                        <div class="skill_sublist">
+                            <div class="skill_subtitle">
+                                <h3>Adobe Photoshop</h3>
+                                <span class="skill_percent">85%</span>
+                            </div>
+                            <div class="skill_percent_bar">
+                                <span class="skill_bar_ps"></span>
+                            </div>
+                        </div>
+                        <div class="skill_sublist">
+                            <div class="skill_subtitle">
+                                <h3>Ibis Paint</h3>
+                                <span class="skill_percent">70%</span>
+                            </div>
+                            <div class="skill_percent_bar">
+                                <span class="skill_bar_ibis"></span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -174,6 +214,11 @@
 
 
     </main>
+
+    <!-- =============================================== JS ====================================== -->
+
+    <script src="js/index.js"></script>
 </body>
+
 
 </html>

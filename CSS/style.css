@@ -25,7 +25,7 @@
 }
 
 *::selection {
-    background: rgb(6, 153, 251);
+    background: rgb(238, 90, 120);
     color: #fff;
 }
 
@@ -56,11 +56,16 @@ html {
     margin: auto;
     left: 0; right: 0;
 }
-.section {
+
+.nav_section {
     max-width: 118rem;
     margin: auto;
 }
 
+.section {
+    max-width: 115rem;
+    margin: auto;
+}
 /* =============================== Header ========================== */
 .header {
     width: 100%;
@@ -208,11 +213,10 @@ ul li a:hover::after {
     column-gap: 2rem;
     margin-top: 2rem;
 }
-
-.about_info h2{
+.about_info_heading{
     color: var(--title-color);
-    font-size: 3rem;
-    
+    font-size: 2rem;
+    text-align: left;
 }
 .about_info p{
     padding-top: 1rem;
@@ -226,7 +230,7 @@ ul li a:hover::after {
     display: inline-block;
     background-color: var(--title-color);
     color: var(--text-color);
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     padding: 1rem;
     margin-top: 2rem;
     border-radius: .5rem;
@@ -234,7 +238,7 @@ ul li a:hover::after {
 
 .button:hover{
     background-color: #dd3b5b;
-    font-size: 2rem;
+    font-size: 1.74rem;
     transition: 0.3s ease;
 
 }
@@ -259,10 +263,19 @@ ul li a:hover::after {
     font-family: var(--title-font);
 }
 
+/* .skill_content{
+    box-shadow: 0 5px 45px rgba(0, 0, 0, 0.1);
+    
+} */
+
 .skill_header{
     display: flex;
-    column-gap: 1rem;
+    align-items: center;
+    justify-content: center;
     color: var(--title-color);
+    cursor: pointer;
+    margin-bottom: 1rem;
+    /* box-shadow: 0 5px 45px rgba(0, 0, 0, 0.1); */
 }
 
 .skill_icon , .skill_down{
@@ -273,6 +286,81 @@ ul li a:hover::after {
 .skill_title{
     font-size: 2rem;
 }
+
+
+.skill_list{
+    display: grid;
+    gap: 1rem;
+}
+
+.skill_sublist{
+    font-family: var(--text-font);
+}
+
+.skill_subtitle{
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill_percent_bar{
+    display: block;
+    border-radius: 0.75rem;
+    height: 0.5rem;
+    background-color: #ee899d;
+}
+
+.skill_bar_html{
+    display: block;
+    height: 0.5rem;
+    width: 90%;
+    background-color: var(--title-color);
+}
+.skill_bar_css{
+    display: block;
+    height: 0.5rem;
+    width: 70%;
+    background-color: var(--title-color);
+}
+.skill_bar_js{
+    display: block;
+    height: 0.5rem;
+    width: 60%;
+    background-color: var(--title-color);
+}
+.skill_bar_ps{
+    display: block;
+    height: 0.5rem;
+    width: 85%;
+    background-color: var(--title-color);
+}
+.skill_bar_ibis{
+    display: block;
+    height: 0.5rem;
+    width: 70%;
+    background-color: var(--title-color);
+}
+
+.skill_close .skill_list{
+    height: 0;
+    overflow: hidden;
+}
+
+.skill_open .skill_list{
+    height: max-content;
+    margin-bottom: 2.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* =================================== Media Quieres ====================== */
