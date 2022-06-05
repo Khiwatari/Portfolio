@@ -9,6 +9,8 @@
     --title-color: #dc143c;
     --text-color: rgb(252, 251, 251);
     --body-color: #000;
+    --shadow: 0 5px 45px rgba(0, 0, 0, 0.1);
+
 
     --head-font: 'Open Sans', sans-serif;
     --text-font: 'Poppins', sans-serif;
@@ -274,7 +276,7 @@ ul li a:hover::after {
     color: var(--title-color);
     cursor: pointer;
     margin-bottom: 1rem;
-    /* box-shadow: 0 5px 45px rgba(0, 0, 0, 0.1); */
+    
 }
 
 .skill_icon , .skill_down{
@@ -368,12 +370,26 @@ ul li a:hover::after {
 
 @media screen and (max-width: 1330px) {
 
-    .home_img {
-        top: 10%;
+    .home {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
-    .home_blob {
-        width: 40rem;
+    .home-section {
+        max-width: 60rem;
+        margin: auto;
+    }
+
+    .home_img {
+        position: relative;
+        width: 35rem;
+        height: 35rem;
+    }
+
+    .home_blob{
+        position: relative;
+        font-size: 20rem;
     }
 
     .home_details {
@@ -396,19 +412,19 @@ ul li a:hover::after {
 
 @media screen and (max-width: 1330px) {
 
-
-    .home {
+    .about_details{
+        padding-top: 3rem;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
-    }
-
-    .home-section {
-        max-width: 60rem;
+        max-width: 50rem;
         margin: auto;
     }
 
-    .home_img {
-        position: relative;
+    .about_info_heading{
+        padding-top: 2rem ;
+    }
+
+    .about_img{
+        box-shadow: var(--shadow);
     }
 }
