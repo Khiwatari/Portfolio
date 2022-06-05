@@ -263,10 +263,9 @@ ul li a:hover::after {
     font-family: var(--title-font);
 }
 
-/* .skill_content{
-    box-shadow: 0 5px 45px rgba(0, 0, 0, 0.1);
-    
-} */
+.skill_content{
+    margin: auto;
+}
 
 .skill_header{
     display: flex;
@@ -343,11 +342,13 @@ ul li a:hover::after {
 .skill_close .skill_list{
     height: 0;
     overflow: hidden;
+    transition: 1s ease;
 }
 
 .skill_open .skill_list{
     height: max-content;
     margin-bottom: 2.5rem;
+    transition: 0.5s ease;
 }
 
 
